@@ -43,7 +43,7 @@ the return address of the touch1 address.
 //Open a second terminal window, log in and go to attacklab directory again. Do the following in this window//
 To find the address the touch1, you need to get the dissassembled code for ctarget file.
 type this outside of the debugger, but inside the attacklab directory:
-    >>> objdump -d rtarget > rtarget_dump.txt
+    >>> objdump -d ctarget > ctarget_dump.txt
 To open this file, type:
     >>> cat rtarget_dump.txt
 Use the Cntl-F find to find the touch1 function. Search 'touch1' inside rtarget, mine looks like this:
